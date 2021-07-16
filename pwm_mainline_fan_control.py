@@ -23,7 +23,6 @@ def to_file(fname: str, val: int):
 
 
 def duty_cycle(pct: int):
-    print("DELME", int(pct / 100.0 * period))
     to_file("pwm1/duty_cycle", int(pct / 100.0 * period))
 
 

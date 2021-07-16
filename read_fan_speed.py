@@ -1,5 +1,4 @@
-#!/usr/bin/python
-# this python code is base python 2, not python 3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import RPi.GPIO as GPIO
 import time
@@ -15,7 +14,7 @@ GPIO.setup(TACH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 t = time.time()
 rpm = 0
 
-def fell(n):
+def fell():
     global t
     global rpm
 
@@ -30,7 +29,7 @@ GPIO.add_event_detect(TACH, GPIO.FALLING, fell)
 
 try:
     while True:
-        print "%.f RPM" % rpm
+        print("%.f RPM" % rpm)
         rpm = 0
         time.sleep(1)
 

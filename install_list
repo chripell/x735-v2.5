@@ -1,0 +1,2 @@
+supervisor,/usr/bin
+supervisor.service,/etc/systemd/system/

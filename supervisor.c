@@ -20,9 +20,9 @@
 static char last_boot[MAX_BUF + 1] = "/lastboot";
 static int min_boot_sec = 60*10;
 static int real_reboot = 1;
-static float min_temp = 30.0;
+static float min_temp = 35.0;
 static float start_temp = 40.0;
-static float delta_t = 30.0;
+static float delta_t = 25.0;
 static int min_duty = 50;
 static int debug = 0;
 static int shutdown_pin = 454 + 5;

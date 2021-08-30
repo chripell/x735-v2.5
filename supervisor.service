@@ -1,0 +1,11 @@
+[Unit]
+Description=Attimis Supervisor
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/bin/supervisor
+
+[Install]
+WantedBy=multi-user.target

@@ -1,3 +1,7 @@
 *~
 supervisor
 compile_commands.json
+*.pkg.tar.xz
+pkg
+src
+
